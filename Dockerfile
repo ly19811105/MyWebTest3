@@ -20,5 +20,3 @@ ADD MyWebtest-install.sh /usr/internet/MyWebtest-install.sh
 RUN chmod +x /usr/internet/MyWebtest-install.sh
 #Run Script
 CMD ["bash", "/usr/internet/MyWebtest-install.sh"]
-RUN ls /usr/bin/nginx/
-RUN ls /usr/local/lib/
