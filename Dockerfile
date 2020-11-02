@@ -1,7 +1,7 @@
 # Dockerfile
 #
 # Version: 1.3.0
-FROM ubuntu:20.04
+FROM debian:latest
 
 RUN apt-get update && apt-get install -y openssh-server
 RUN mkdir /var/run/sshd
