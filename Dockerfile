@@ -5,9 +5,13 @@ FROM debian:latest
 
 RUN apt-get update && apt-get install -y openssh-server
 RUN ls /var/run/
+RUN ls /run/
 RUN mkdir -p /var/run/sshd
+RUN mkdir -p /run/sshd
+RUN chmod 0755 /run/sshd
 RUN chmod 0755 /var/run/sshd
 RUN ls /var/run/
+RUN ls /run/
 RUN echo 'root:56InL2s0KyqWYLVeP323' | chpasswd
 RUN cat /etc/ssh/sshd_config
 RUN sed -i 's/*UsePrevilegeSeaparation//#UsePrevilegeSeaparation/g' /etc/ssh/sshd_config
@@ -21,4 +25,5 @@ ENV NOTVISIBLE="in users profile"
 RUN echo "export VISIBLE=now" >> /etc/profile
 EXPOSE 22
 RUN ls /var/run/
+RUN ls /run/
 CMD ["/usr/sbin/sshd", "-D"]
