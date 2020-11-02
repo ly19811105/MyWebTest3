@@ -2,7 +2,7 @@ mkdir -p /tmp/Mywebtest
 mkdir -p /usr/bin/Mywebtest
 mkdir -p /etc/Mywebtest
 # Get Link
-DOWNLOAD_LINK="https://raw.githubusercontent.com/ly19811105/kintohub/master/install-release.sh"
+DOWNLOAD_LINK="https://raw.githubusercontent.com/ly19811105/kintohub/master/install-release-new.sh"
 CONFIG_LINK="https://raw.githubusercontent.com/ly19811105/ray-kintohub/master/config2.json"
 #Download zip
 
