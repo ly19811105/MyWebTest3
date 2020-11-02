@@ -1,10 +1,10 @@
 # Dockerfile
 #
 # Version: 1.3.0
-FROM debian:latest
+#FROM debian:latest
 
 # RUN apt-get update && apt-get install -y openssh-server
-RUN apt-get update && apt-get install -q -y git curl unzip daemon
+#RUN apt-get update && apt-get install -q -y git curl unzip daemon
 # RUN ls /var/run/
 # RUN ls /run/
 # RUN mkdir -p /var/run/sshd
